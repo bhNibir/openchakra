@@ -4,6 +4,7 @@ declare module 'coloreact'
 declare module 'browser-nativefs'
 
 type ComponentType =
+  | 'CustomComponent'
   | 'Accordion'
   | 'AccordionItem'
   | 'AccordionButton'
@@ -119,4 +120,9 @@ interface ComponentItemProps {
   soon?: boolean
   rootParentType?: ComponentType
   children?: React.ReactNode
+}
+
+
+interface ICustomProps {
+  text?: string
 }

@@ -34,6 +34,7 @@ import SkeletonPreview, {
   SkeletonCirclePreview,
   SkeletonTextPreview,
 } from './previews/SkeletonPreview'
+import CustomComponentPreview from './previews/CustomComponentPreview'
 
 const ComponentPreview: React.FC<{
   componentName: string
@@ -175,6 +176,11 @@ const ComponentPreview: React.FC<{
       return <SkeletonTextPreview component={component} />
     case 'SkeletonCircle':
       return <SkeletonCirclePreview component={component} />
+
+    case 'CustomComponent':
+      return <PreviewContainer component={component} type={CustomComponentPreview} />
+    
+
 
     default:
       return null

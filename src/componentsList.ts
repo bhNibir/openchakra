@@ -11,6 +11,7 @@ type MenuItems = Partial<
 >
 
 export const menuItems: MenuItems = {
+  CustomComponent: {},
   Accordion: {
     children: {
       Accordion: {},
@@ -127,6 +128,7 @@ export const menuItems: MenuItems = {
 }
 
 export const componentsList: ComponentType[] = [
+  'CustomComponent',
   'Accordion',
   'AccordionIcon',
   'AccordionItem',
