@@ -178,7 +178,7 @@ const ComponentPreview: React.FC<{
       return <SkeletonCirclePreview component={component} />
 
     case 'CustomComponent':
-      return <PreviewContainer component={component} type={CustomComponentPreview} />
+      return <PreviewContainer component={component} type={CustomComponentPreview} {...forwardedProps} />
     
 
 

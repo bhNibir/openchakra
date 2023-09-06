@@ -155,7 +155,7 @@ type PreviewDefaultProps = {
 
 export const DEFAULT_PROPS: PreviewDefaultProps = {
   CustomComponent: {
-    children: 'Test text',
+    children: 'This is custom component Test text',
   },
 
   AlertDescription: {
